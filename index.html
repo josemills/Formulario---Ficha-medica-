@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-Ficha Medica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="medicalForm">
+
+        <h1> Ficha Medica</h1>
+
+        <label for="rut">RUT:</label>
+        <input type= "text" id="rut" name="rut" required/>
+
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required/>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required/> 
+        
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required/>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad"required/>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required/>
+
+        <label for="estadoCivil">Estado Civil:</label>
+        <input type="text" id="estadoCivil" name="estadoCivil" required/>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+
+        <div class="buttons">
+            <input type="button" value="Guardar" onclick="guardarRegistro()">
+            <input type="button" value="Limpiar" onclick="limpiarFormulario()">
+            <input type="button" value="Cerrar" onclick="cerrarFormulario()">
+        </div>
+
+        <h2>Buscar por Apellido</h2>
+
+        <div>
+            <button onclick="buscarPorApellido()">Buscar por Apellido</button>
+        </div>
+
+    </form>
+
+<script src="function.js"></script>
+</body>
+</html>
