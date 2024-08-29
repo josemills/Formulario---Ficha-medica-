@@ -1,0 +1,25 @@
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: lightsteelblue;
+}
+
+#medicalForm{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 30px;
+    background-color: grey;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
